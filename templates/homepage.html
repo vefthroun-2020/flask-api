@@ -10,14 +10,16 @@
 
   <table border="1" cellpadding="10">
     <tr>
-      <td>Name</td>
-      <td>Email</td>
+      <th>Name</th>
+      <th>Style</th>
+      <th>Recipe</th>
     </tr>
 
-    {% for student in students %}
+    {% for beer in beers %}
     <tr>
-      <td>{{ student.name }}</td>
-      <td>{{ student.email }}</td>
+      <td>{{ beer.name }}</td>
+      <td>{{ beer.style }}</td>
+      <td>{{ beer.recipe }}</td>
     </tr>
     {% endfor %}
   </table>
