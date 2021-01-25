@@ -28,6 +28,8 @@ class Beer(db.Model):
         self.style = style
         self.recipe = recipe
 
+# Attempt to create tables
+db.create_all()
 
 def do_404():
     # 404 Error - Not found
@@ -119,6 +121,6 @@ DELETE - To delete data
 POST - Execute some task
 """
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     db.create_all()
     app.run(debug=True)
